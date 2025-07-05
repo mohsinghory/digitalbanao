@@ -1,9 +1,17 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Code, Database, Smartphone, Settings, Cloud, TrendingUp } from "lucide-react";
+import { Code,Settings,TrendingUp } from "lucide-react";
 
 export default function Services() {
   const services = [
+     {
+      icon: TrendingUp,
+      title: "Digital Marketing",
+      description: "Complete digital marketing services to modernize your business operations.",
+      technologies: ["Automation", "Integration", "Growth"],
+      gradient: "from-pink-50 to-rose-50",
+      iconColor: "bg-pink-600",
+    },
     {
       icon: Code,
       title: "Web Development",
@@ -12,22 +20,8 @@ export default function Services() {
       gradient: "from-blue-50 to-indigo-50",
       iconColor: "bg-primary",
     },
-    {
-      icon: Database,
-      title: "Database Solutions",
-      description: "Robust database design and optimization using MySQL and modern database technologies.",
-      technologies: ["MySQL", "MongoDB", "PostgreSQL"],
-      gradient: "from-green-50 to-emerald-50",
-      iconColor: "bg-emerald-600",
-    },
-    {
-      icon: Smartphone,
-      title: "UI/UX Design",
-      description: "Beautiful, responsive designs using Tailwind CSS and modern design principles.",
-      technologies: ["Tailwind CSS", "Responsive", "Modern"],
-      gradient: "from-purple-50 to-violet-50",
-      iconColor: "bg-purple-600",
-    },
+   
+  
     {
       icon: Settings,
       title: "IT Consulting",
@@ -36,22 +30,8 @@ export default function Services() {
       gradient: "from-orange-50 to-red-50",
       iconColor: "bg-orange-600",
     },
-    {
-      icon: Cloud,
-      title: "Cloud Solutions",
-      description: "Scalable cloud infrastructure and deployment solutions for modern applications.",
-      technologies: ["AWS", "Azure", "Docker"],
-      gradient: "from-teal-50 to-cyan-50",
-      iconColor: "bg-teal-600",
-    },
-    {
-      icon: TrendingUp,
-      title: "Digital Transformation",
-      description: "Complete digital transformation services to modernize your business operations.",
-      technologies: ["Automation", "Integration", "Growth"],
-      gradient: "from-pink-50 to-rose-50",
-      iconColor: "bg-pink-600",
-    },
+    
+   
   ];
 
   return (
@@ -60,7 +40,7 @@ export default function Services() {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Professional Services</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Comprehensive IT consulting and development services tailored to your business needs
+            Comprehensive Digital Marketing and IT services tailored to your business needs
           </p>
         </div>
         

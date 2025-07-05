@@ -4,7 +4,6 @@ export default function About() {
   const stats = [
     { number: "150+", label: "Projects Completed" },
     { number: "100+", label: "Happy Clients" },
-    { number: "8+", label: "Years Experience" },
     { number: "15+", label: "Team Members" },
   ];
 
@@ -15,10 +14,14 @@ export default function About() {
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">About DigitalBanao</h2>
             <p className="text-lg text-gray-600 mb-6">
-              DigitalBanao is a leading IT consulting firm specializing in modern web development and digital transformation. Our team of expert developers and consultants brings years of experience in React, Node.js, and cutting-edge technologies.
+              DigitalBanao is a leading IT consulting firm specializing in modern digital marketing and  
+              web development. Our team of expert developers and consultants brings years of experience 
+              in React, Node.js, and cutting-edge technologies.
             </p>
             <p className="text-lg text-gray-600 mb-8">
-              We believe in creating digital solutions that not only meet your current needs but also scale with your business growth. Our commitment to excellence and innovation drives everything we do.
+              We believe in creating digital solutions that not only meet your current needs but also 
+              scale with your business growth. Our commitment to excellence and innovation drives 
+              everything we do.
             </p>
             
             <div className="grid grid-cols-2 gap-6">

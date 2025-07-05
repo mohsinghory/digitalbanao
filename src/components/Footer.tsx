@@ -2,11 +2,9 @@ import { Code, Facebook, Twitter, Linkedin, Github } from "lucide-react";
 
 export default function Footer() {
   const services = [
+    "Digital Marketing",
     "Web Development",
     "IT Consulting",
-    "Database Solutions",
-    "Cloud Solutions",
-    "Digital Transformation",
   ];
 
   const technologies = [
@@ -38,11 +36,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center mb-4">
-              <Code className="text-primary text-2xl mr-3" />
+              <img
+                src="/digital_banao_logo.jpeg"
+                alt="DigitalBanao Logo"
+                className="w-10 h-10 rounded-full border-2 border-primary object-cover mr-3 transform scale-110"
+              />
               <span className="text-xl font-bold">DigitalBanao</span>
             </div>
             <p className="text-gray-400 mb-4">
-              Transforming businesses through innovative IT solutions and cutting-edge web development.
+              Transforming businesses through innovative Digital marketing  IT solutions and cutting-edge web development.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => (
@@ -99,7 +101,7 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 DigitalBanao. All rights reserved. | Crafted with ❤️ by the DigitalBanao team.</p>
+          <p>&copy; 2025 DigitalBanao. All rights reserved. | Crafted with ❤️ by the DigitalBanao team.</p>
         </div>
       </div>
     </footer>

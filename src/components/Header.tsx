@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Code, Menu, X } from "lucide-react";
+import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useScrollToSection } from "@/hooks/useScrollToSection";
@@ -24,27 +24,33 @@ export default function Header() {
   return (
     <header className="bg-white shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
+          {/* Logo */}
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
-              <Code className="text-primary text-2xl mr-3" />
-              <span className="text-xl font-bold text-gray-900">DigitalBanao</span>
+              <img
+                src="/digital_banao_logo.jpeg"
+                alt="DigitalBanao Logo"
+                className="w-12 h-12 rounded-full border-2 border-primary object-cover mr-3"
+              />
+              <span className="text-2xl font-bold text-gray-900">DigitalBanao</span>
             </div>
           </div>
-          
+
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             {navItems.map((item) => (
               <button
                 key={item.href}
                 onClick={() => handleNavClick(item.href)}
-                className="text-gray-700 hover:text-primary transition-colors duration-200 font-medium"
+                className="relative group font-medium text-gray-800 transition-colors duration-300 text-lg"
               >
                 {item.label}
+                <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-cyan-300 transition-all duration-300 group-hover:w-full"></span>
               </button>
             ))}
           </nav>
-          
+
           {/* Mobile menu */}
           <div className="md:hidden">
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -59,9 +65,10 @@ export default function Header() {
                     <button
                       key={item.href}
                       onClick={() => handleNavClick(item.href)}
-                      className="text-left px-3 py-2 text-gray-700 hover:text-primary transition-colors duration-200 font-medium"
+                      className="relative group text-left px-3 py-2 text-gray-800 font-medium text-lg transition-colors duration-300 hover:text-cyan-300"
                     >
                       {item.label}
+                      <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-cyan-300 transition-all duration-300 group-hover:w-full"></span>
                     </button>
                   ))}
                 </div>

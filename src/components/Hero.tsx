@@ -13,7 +13,7 @@ export default function Hero() {
             <span className="text-yellow-300">Digital Excellence</span>
           </h1>
           <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto">
-            DigitalBanao delivers cutting-edge IT consulting services, web development, and digital solutions to accelerate your business growth.
+            DigitalBanao delivers cutting-edge solutions for Digital marketing , web development,to accelerate your business growth.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
@@ -25,7 +25,7 @@ export default function Hero() {
             <Button
               onClick={() => scrollToSection("contact")}
               variant="outline"
-              className="border-2 border-white text-white px-8 py-3 text-lg font-semibold hover:bg-white hover:text-primary transition-colors duration-200"
+              className="border-2 border-white text-black px-8 py-3 text-lg font-semibold hover:bg-white hover:text-primary transition-colors duration-200"
             >
               Get Started Today
             </Button>
